@@ -38,4 +38,4 @@
         完整網路路徑
         response.sendRedirect("http://www.yahoo.com.tw");
         本地端的靜態頁面
-        response.sendRedirect("jsp/send-redirect-page.jsp");
+        response.sendRedirect("html/SendRedirect.html");
