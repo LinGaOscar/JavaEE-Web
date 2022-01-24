@@ -17,8 +17,8 @@ public class SendRedirect extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-//		response.sendRedirect("http://www.yahoo.com.tw");
-		response.sendRedirect("jsp/send-redirect-page.jsp");
+		response.sendRedirect("http://www.yahoo.com.tw");
+//		response.sendRedirect("html/SendRedirect.html");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
