@@ -13,5 +13,22 @@
 + JSP
 
     JSPtoJSP
-    Java Server Pages 利用JSP標籤在HTML中使用Java
-    可以使用servlet的處理業務邏輯，由Java servlet的模板引擎支持的模式組合使用。
+
+        Java Server Pages 利用JSP標籤在HTML中使用Java，JSP是Servlet的擴充套件
+        可以使用servlet的處理業務邏輯，由Java servlet的模板引擎支持的模式組合使用。
+
+    JSP tag
+
+        <%      %> scriptlet    主要用來在jsp頁面寫java程式碼
+        <%@     % > 指令        主要用來設定和這個頁面有關內容
+        <%=     % > 運算式      等同於在scriptlet 外使用out.print(); 所以裡面不用加;
+
+        不方便維護切版人員 網頁編輯人員 不一定會看得懂程式碼
+
+    JSTL
+
+        c:set
+        scope=”request” 對應於JSP的request，以及servlet的request
+        scope=”session” 對應於JSP的session，以及servlet的request.getSession()
+        scope=”application” 對應於JSP的application，以及servlet的this.getServletContext()
+        scope=”page”，在JSP在對應爲jsp的pageContext這個內置對象，可是在servlet中，卻找不到對應的對象。
