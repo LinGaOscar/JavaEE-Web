@@ -1,4 +1,4 @@
-package com.oscar.getparam;
+package com.oscar.postform;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,16 +7,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/GetParam")
-public class GetParam extends HttpServlet {
+@WebServlet("/PostForm")
+public class PostForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	//http://localhost:8080/MySecondServlet/PostForm
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String username = request.getParameter("username");
-		
-		response.getWriter().print(username);
-		response.getWriter().append("Hello World "+ username);
+		String password = request.getParameter("password");
+		System.out.println("Get username : " + username);
+		System.out.println("Get password : " + password);
+		response.getWriter().append("Hello " + username + " " + password);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
