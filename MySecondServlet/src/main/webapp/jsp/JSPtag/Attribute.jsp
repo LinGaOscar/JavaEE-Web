@@ -7,18 +7,15 @@
 <title>Attribute and Show</title>
 </head>
 <body>
+<!-- http://localhost:8080/MySecondServlet/jsp/JSPtag/Attribute.jsp -->
 <%@ page import="java.util.*" %>
 <h2>this is JSP tag</h2>
 	<%
 		 int int1 = 22; 
-	%>
-	<%
 		 pageContext.setAttribute("int1",int1);
 	%>
 	<span> JSP getAttribute from int1
-		<%=
-			 pageContext.getAttribute("int1")
-		%>
+		<%= pageContext.getAttribute("int1") %>
 	</span>
 	<div>
 		<span >< %      % > scriptlet</span>
