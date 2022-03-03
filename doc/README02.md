@@ -2,6 +2,10 @@
 
 + Get / Post Form
 
+    JSP
+        網址http://localhost:8080/MySecondServlet/jsp/JSPtag/Attribute.jsp
+                                project name/folder/folder/html/jsp
+
     doGet in doPost
     一般是在教科書或者不需要區分get還是post方法呼叫的場合下使用。
     request.getParameter("paramate");
