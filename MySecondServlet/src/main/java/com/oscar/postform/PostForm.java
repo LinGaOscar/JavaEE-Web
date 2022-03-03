@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/PostForm")
 public class PostForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	//http://localhost:8080/MySecondServlet/PostForm
+	// http://localhost:8080/MySecondServlet/jsp/PostForm.jsp
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String username = request.getParameter("username");

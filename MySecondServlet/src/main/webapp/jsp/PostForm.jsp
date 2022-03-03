@@ -7,6 +7,7 @@
 <title>EasyPostForm</title>
 </head>
 <body>
+<!-- http://localhost:8080/MySecondServlet/jsp/PostForm.jsp -->
 <h2>Input your username and password</h2>
 	<form method="post" action="../PostForm">
 		username : <input type="text" name="username">

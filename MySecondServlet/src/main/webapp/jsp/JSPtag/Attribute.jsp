@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-	pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="BIG5">
+<meta charset="UTF-8">
 <title>Attribute and Show</title>
 </head>
 <body>
@@ -19,8 +19,8 @@
 	</span>
 	<div>
 		<span >< %      % > scriptlet</span>
-		<span >< %@     % > «ü¥O</span>
-		<span >< %=     % > ¹Bºâ¦¡</span>
+		<span >< %@     % > æŒ‡ä»¤</span>
+		<span >< %=     % > é‹ç®—å¼</span>
 	</div>
 </body>
 </html>
