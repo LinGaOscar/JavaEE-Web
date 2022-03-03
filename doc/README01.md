@@ -11,6 +11,10 @@
             doPost is doGet 
             response.getWriter().append("Hello World");
 
+        Servlet
+            網址http://localhost:8080/MySecondServlet/GetForm
+            專案名稱/ClassName
+
         GetWirte 編寫畫面
             response.getWriter().println("<!DOCTYPE html>");
 

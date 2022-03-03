@@ -2,10 +2,6 @@
 
 + Get / Post Form
 
-    Servlet
-    網址http://localhost:8080/MySecondServlet/GetForm
-    專案名稱/ClassName
-
     doGet in doPost
     一般是在教科書或者不需要區分get還是post方法呼叫的場合下使用。
     request.getParameter("paramate");
