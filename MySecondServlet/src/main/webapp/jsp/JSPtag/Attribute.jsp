@@ -11,11 +11,11 @@
 <%@ page import="java.util.*" %>
 <h2>this is JSP tag</h2>
 	<%
-		 int int1 = 22; 
-		 pageContext.setAttribute("int1",int1);
+		 int salary = 22000; 
+		 pageContext.setAttribute("MySalary",salary);
 	%>
-	<span> JSP getAttribute from int1
-		<%= pageContext.getAttribute("int1") %>
+	<span> JSP getAttribute from MySalary
+		<%= pageContext.getAttribute("MySalary") %>
 	</span>
 	<div>
 		<span >< %      % > scriptlet</span>

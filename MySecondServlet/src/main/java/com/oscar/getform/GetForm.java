@@ -18,6 +18,7 @@ public class GetForm extends HttpServlet {
 		if (username == null) {
 			//response.sendRedirect("html/getform/GetForm.html");
 			response.sendRedirect("jsp/GetForm.jsp");
+			request.getRequestDispatcher("jsp/GetForm.jsp").forward(request, response);
 		} else {
 			System.out.println("Get Name : "+username);
 			response.getWriter().append("Hello World " + username);

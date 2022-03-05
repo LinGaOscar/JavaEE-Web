@@ -12,7 +12,7 @@
 <h2> jstl core c:set</h2>
 	<c:set var="salary" scope="session" value="${2000*2}" />
 	<div>
-		salary is <c:out value="${salary}" />
+		My salary is <c:out value="${salary}" />
 	</div>
 	<div>
 		salary is ${salary}
