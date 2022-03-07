@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class GetWrite extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	// http://localhost:8080/MyFirstServlet/GetWrite
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.getWriter().println("<!DOCTYPE html>");
