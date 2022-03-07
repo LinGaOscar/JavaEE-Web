@@ -54,3 +54,8 @@
         SessionSet -> SessionReq
         session.setAttribute(key, value);
         request.getSession().getAttribute("key");
+
++ Homeworl
+
+        創立Homework2 servlet 
+        將畫面1-100表格改成9*9表
