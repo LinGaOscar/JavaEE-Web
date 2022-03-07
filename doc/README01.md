@@ -3,6 +3,9 @@
 + hello
 
         HelloWorld
+            
+            create Dynamic Web Project
+            create New Server -> add and remove
             src-> new servlet
             package / name 
             super();
@@ -39,3 +42,15 @@
         response.sendRedirect("http://www.yahoo.com.tw");
         本地端的靜態頁面
         response.sendRedirect("html/SendRedirect.html");
+
++ Cookies
+
+        CookiesSet -> CookiesReq
+        Cookie cookie = new Cookie("key","value");
+        cookie.getName() / cookie.getValue()
+
++ Sessions
+
+        SessionSet -> SessionReq
+        session.setAttribute(key, value);
+        request.getSession().getAttribute("key");
