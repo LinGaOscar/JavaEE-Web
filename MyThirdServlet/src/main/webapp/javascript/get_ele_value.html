@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<meta charset="UTF-8">
+<title>02checkPassword.html</title>
+</head>
+<body>
+	<label>Password:</label>
+	<input type="password" id="idPwd" size="6" value="123" />
+	<span id="idsp">span</span>
+	<br />
+	<input type="button" id="idbut" value="checkPassword" />
+
+	<script>
+		//http://localhost:8080/MyThirdServlet/javascript/get_ele_value.html
+		document.getElementById("idbut").onclick = checkPwd;
+
+		function checkPwd() {
+			// alert("Hello");
+			//get idPwd ele
+			let PwdObj = document.getElementById("idPwd");
+			console.log(PwdObj); //<input type="password" id="idPwd" size="6" />
+
+			//get idPwd ele value
+			let PwdObjVal = PwdObj.value;
+			console.log(PwdObjVal + typeof PwdObjVal); //string
+
+			let sp = document.getElementById("idsp");
+			let PwdObjValLen = PwdObjVal.length;
+
+			if (PwdObjVal == "") {
+				sp.innerHTML = "you must enter";
+			} else if (PwdObjValLen < 6) {
+				sp.innerHTML = "your password length lower than 6";
+			} else if (PwdObjValLen > 12) {
+				sp.innerHTML = "your password length higher than 12";
+			}
+		}
+	</script>
+</body>
+</html>

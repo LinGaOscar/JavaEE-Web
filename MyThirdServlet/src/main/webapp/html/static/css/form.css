@@ -1,0 +1,31 @@
+fieldset {
+	width: 470px;
+	margin: 10px;
+	border: 2px solid blueviolet;
+	border-radius: 15px;
+}
+
+.st1 {
+	background-color: khaki;
+	width: 450px;
+	border-bottom: 3px dotted black;
+	border-left: 3px solid gray;
+	border-right: 3px solid gray;
+	border-top: 3px dashed black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 5px;
+	font-size: x-large;
+}
+
+.st2 {
+	width: 450px;
+	text-align: center;
+	font-size: x-large;
+}
+
+.t1 {
+	width: 150px;
+	float: left;
+	text-align: center;
+}

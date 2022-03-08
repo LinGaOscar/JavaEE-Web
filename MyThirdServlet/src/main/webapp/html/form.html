@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="static/css/form.css">
+</head>
+<body>
+	<form action="#" method="GET" enctype="multipart/form-data">
+		<fieldset>
+			<legend>個人資料</legend>
+			<div class="st1">
+				<label class="t1" for="acc1">姓名:</label> <input type="text"
+					id="acc1" name="account" maxlength="18" size="10" autofocus
+					autocomplete="off" placeholder="guest">
+			</div>
+			<div class="st1">
+				<label class="t1" for="pw1">密碼:</label> <input type="password"
+					id="pw1" name="password" maxlength="12" size="10" required>
+			</div>
+			<div class="st1">
+				<label for="" class="t1">性別</label> <input type="radio" id="m1"
+					name="gander" value="male"> <label for="m1">男</label> <label
+					for="m2"> <input type="radio" id="m2" name="gander"
+					value="female">女
+				</label>
+			</div>
+			<div class="st1">
+				<label for="idc1" class="t1">生分證字號</label> <input type="text"
+					id="idc1" name="idcode" pattern="[A-z]{1}[1-2]{1}\d{8}"
+					maxlength="10" autocomplete="off">
+			</div>
+			<div class="st1">
+				<label for="em1" class="t1">信箱</label> <input type="email" id="em1"
+					name="email">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>居住地</legend>
+			<div class="st1">
+				<label for="" class="t1">縣市</label> <select name="LivingIN">
+					<option selected value="TPE">台北市</option>
+					<option value="TPH">新北市</option>
+					<option value="TYU">桃園市</option>
+					<option value="HSC">新竹市</option>
+
+				</select>
+			</div>
+			<div class="st1">
+				<label for="add" class="t1">完整地址:</label> <input type="text"
+					size="30" id="add" name="address">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>詳細</legend>
+			<div class="st1">
+				<label for="" class="t1">上傳檔案</label> <input type="file"
+					name="file1" multiple>
+			</div>
+			<div class="st1">
+				<label for="bl1" class="t1">部落格</label> <input type="url" name="bl1"
+					placeholder="http://" list="bl1l1">
+				<datalist id="bl1l1">
+					<option value="http://www.google.com">google</option>
+					<option value="http://www.pchome.com.tw">pchome</option>
+				</datalist>
+			</div>
+			<div class="st1">
+				<lable class="t1">興趣</lable>
+				<label> 運動<input type="checkbox" name="hobby" value="sport">
+				</label> <label> 讀書<input type="checkbox" name="hobby" value="read">
+				</label> <label for="c3"> 音樂<input type="checkbox" id="c3"
+					name="hobby" value="music">
+				</label>
+
+			</div>
+			<div class="st1">
+				<label for="bd1" class="t1">生日</label> <input type="date" id="bd1"
+					name="brithday">
+			</div>
+			<div class="st1">
+				<label class="t1" for="memo1">意見:</label>
+				<textarea name="memo" id="memo1" cols="30" rows="10" readonly>aiudhaih oihijnlkdjfndfiuh shfksdfie</textarea>
+			</div>
+		</fieldset>
+		<div class="st2">
+			<input type="submit" value="送出"> <input type="reset"
+				value="清除">
+		</div>
+
+	</form>
+</body>
+</html>
