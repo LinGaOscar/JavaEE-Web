@@ -1,16 +1,40 @@
 # MyThirdServlet
 
-+ Get / Post Form
++ HTML
 
-    JSP
-        網址http://localhost:8080/MySecondServlet/jsp/JSPtag/Attribute.jsp
-                                project name/folder/folder/html/jsp
+    index.html
 
-    doGet in doPost
-    一般是在教科書或者不需要區分get還是post方法呼叫的場合下使用。
-    request.getParameter("paramate");
+        < a >       超連結 tag
 
-+ JSP
+    ele_org.html
+
+        < h2 >      標題
+        < div >     分隔區塊
+        < p >       段落文字
+        < span >    無分段文字
+        < img >     圖片
+
+    ele_pg.html
+
+        實作畫面
+
+    form.html
+
+        < form >    可以設定GET / POST 
+        < input >   可以選行各種輸入內容
+        tag 內有各種屬性 name id class等
+
+    table.html
+
+        < table >    表格 < td > 直 < tr > 橫
+
+
++ JavaScript
+
+    雖然 "Java" 和 "JavaScript" 都是 Oracle 公司在美國和其他國家的商標或註冊商標，但兩個語言有著非常不同的語法、語意和用途。因為用作網頁的腳本語言而大為知名。
+
+    < script > 作用範圍
+
 
     JSPtoJSP
 
