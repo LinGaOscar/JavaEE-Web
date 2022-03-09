@@ -36,27 +36,44 @@
     < script > 作用範圍
 
 
-    JSPtoJSP
+    01simple.html
 
-        Java Server Pages 利用JSP標籤在HTML中使用Java，JSP是Servlet的擴充套件
-        可以使用servlet的處理業務邏輯，由Java servlet的模板引擎支持的模式組合使用。
+        基本資料型態跟java大同小異
+        注意null跟undefined是不一樣的
+        logic判斷
+        
 
-    JSP tag
+    02get_ele_content.html
 
-        <%      %> scriptlet    主要用來在jsp頁面寫java程式碼
-        <%@     % > 指令        主要用來設定和這個頁面有關內容
-        <%=     % > 運算式      等同於在scriptlet 外使用out.print(); 所以裡面不用加;
+       let x = document.getElementById();
+       取得元素當物件來操作
+       console.log();
+       functione概念
 
-        不方便維護切版人員 網頁編輯人員 不一定會看得懂程式碼
+    03get_ele_value.html
 
-    JSTL
+        畫面元素取得與判斷
+        alert(); 警告視窗
+        document.getElementById().value;
+        取得物件值
+       
+    04DOM.html
 
-        c:set
-        scope=”request” 對應於JSP的request，以及servlet的request
-        scope=”session” 對應於JSP的session，以及servlet的request.getSession()
-        scope=”application” 對應於JSP的application，以及servlet的this.getServletContext()
-        scope=”page”，在JSP在對應爲jsp的pageContext這個內置對象，可是在servlet中，卻找不到對應的對象。
-        <c:if> <c:choose> <C:when>
+        文件物件模型（Document Object Model, DOM）是 HTML、XML 和 SVG 文件的程式介面。
+        它提供了一個文件（樹）的結構化表示法，並定義讓程式可以存取並改變文件架構、風格和內容的方法。
+        DOM 提供了文件以擁有屬性與函式的節點與物件組成的結構化表示。
+        節點也可以附加事件處理程序，一旦觸發事件就會執行處理程序。 
+        本質上，它將網頁與腳本或程式語言連結在一起。
+
+    05Object.html
+
+        串建物件用JSON格式
+
+    06eventHandler.html
+
+        onclick="f1();"     在標籤內加入function
+        document.querySelector("#m2").onclick = f2;     在JS事件處理中加入
+        document.querySelector("#m3").addEventListener("click", f3);        在DOM處理器中加入
 
 + Homework
 
