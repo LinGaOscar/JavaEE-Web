@@ -77,10 +77,11 @@
 
 + Homework
 
-        完成頁面跳轉過程中都不要顯示網頁址變化
-        Forward/Redirect的使用方法
+        完成表單判斷
+        input 名子 欄位不可以有英文數字
+        input 密碼 欄位要同時包含英文數字
 
-        完成HW1-1 頁面JSP tag 與 JSTL 未完成部分
-        scrpitlet 與 c:choose 使用時機
+        請依照名子欄位的判斷條件完成密碼欄位的判斷
+
 
         
