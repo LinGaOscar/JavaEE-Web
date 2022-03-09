@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>homework</title>
+</head>
+<body>
+	<h2>We Love HomeWork</h2>
+
+	<div class="div1">
+		<form action="#" method="GET" enctype="multipart/form-data">
+			<fieldset>
+				<legend>FormCheck</legend>
+				<div>
+					<label for="nameid">姓名</label> <input type="text" id="nameid"
+						maxlength="18" size="10" autofocus autocomplete="off" required
+						onblur="CheckName()"> <span id="sp1id">請輸入名子 </span>
+					<p>(1.不可以空白，2.至少2個字，3.必須為中文)</p>
+					<hr>
+				</div>
+				<div>
+					<label for="pwid">密碼</label> <input type="password" id="pwid"
+						maxlength="12" size="10" required onblur="CheckPW()"> <span
+						id="sp2id">請輸入密碼 </span>
+					<p>(1.不可以空白，2.包含6-12個字，3.包含英文、數字)</p>
+					<hr>
+				</div>
+			</fieldset>
+			<div>
+				<input type="submit" value="送出"> <input type="reset"
+					value="清除">
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+		//http://localhost:8080/MyThirdServlet/homework/homework1.html
+		function CheckName() {
+			let name = document.getElementById("nameid");
+			let nameVal = idName.value;
+			let sp1 = document.getElementById("sp1id");
+			sp1.innerHTML = "";
+			if (nameVal == '' || nameVal == undefined || nameVal == null) {
+				sp1.innerHTML = "不可以空白";
+			} else if (nameVal.length < 2) {
+				sp1.innerHTML = "不可以小於2個字";
+			} else {
+				for (i = 0; i < nameVal.length; i++) {
+					let ch = nameVal.charAt(i).toUpperCase();
+					if (ch >= "A" && ch <= "Z") {
+						sp1.innerHTML = "不可以有英文";
+						break;
+					} else if (ch >= "0" && ch <= "9") {
+						sp1.innerHTML = "不可以有數字";
+						break;
+					} else {
+						sp1.innerHTML = "格式正確: " + nameVal;
+					}
+				}
+			}
+		}
+
+		function CheckPW() {
+			let password = document.getElementById("pwid");
+			let passwordVal = idPW.value;
+			let sp2 = document.getElementById("sp2id");
+			sp2.innerHTML = "";
+			let flag1 = false, flag2 = false, flag3 = false;
+
+			if (nameVal == '' || nameVal == undefined || nameVal == null) {
+				sp2.innerHTML = "不可以空白";
+			} else if (passwordVal.length < 7) {
+				idSp2.innerHTML = "不可以小於6位數";
+			} else if (passwordVal.length > 12) {
+				idSp2.innerHTML = "不可以大於12位數";
+			} else {
+				for (i = 0; i < passwordVal.length; i++) {
+					let ch = nameVal.charAt(i).toUpperCase();
+					//if (如果有英文) {
+					//	flag1==true
+					//} else if (有數字) {
+					//	flag2 == true
+					//}
+				}
+			}
+			if (flag1 == true && flag2 == true) {
+				sp1.innerHTML = "格式正確: " + passwordVal;
+			}
+		}
+	</script>
+</body>
+</html>
