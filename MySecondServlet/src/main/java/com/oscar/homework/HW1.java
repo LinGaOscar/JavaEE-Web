@@ -20,7 +20,6 @@ public class HW1 extends HttpServlet {
 		} else {
 			request.getRequestDispatcher("homework/HW1-1.jsp").forward(request, response);
 		}
-
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
