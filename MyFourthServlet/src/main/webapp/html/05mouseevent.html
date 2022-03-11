@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>05mouseevent.html</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script>
+	//http://localhost:8080/MyFourthServlet/html/05mouseevent.html
+</script>
+</head>
+<body>
+	<div class="container">
+		
+<button class="btn btn-primary" id="click">click</button>
+<button class="btn btn-primary" id="dblclick">dblclick</button>
+<button class="btn btn-primary" id="contextmenu">contextmenu</button>
+<button class="btn btn-primary" id="mousedown">mousedown</button>
+<button class="btn btn-primary" id="mouseup">mouseup</button>
+<button class="btn btn-primary" id="mouseenter">mouseenter</button>
+<button class="btn btn-primary" id="mouseleave">mouseleave</button>
+<button class="btn btn-primary" id="hover">hover</button>
+
+	</div>
+	<script>
+		$(function() {
+			$("#click").click(function(e) {
+				//console.log("click");
+				console.log(e.type);
+			});
+			$("#dblclick").dblclick(function(e) {
+				//console.log("double click")
+				console.log(e.type);
+			});
+			$("#contextmenu").contextmenu(function() {
+				//right click
+				//console.log("contextmenu");
+				console.log(event.type);
+			});
+
+			$("#mousedown").mousedown(function() {
+				//console.log("mouse down");
+				console.log(event.type);
+			})
+			$("#mouseup").mouseup(function() {
+				//console.log("mouse up");
+				console.log(event.type);
+			})
+			$("#mouseenter").mouseenter(function() {
+				//console.log("mouse enter");
+				console.log(event.type);
+			})
+			$("#mouseleave").mouseleave(function() {
+				//console.log("mouse leave");
+				console.log(event.type);
+			})
+
+			$("#hover").hover(function(event) {
+				console.log(event.type);
+			}, function(event) {
+				console.log(event.type);
+			})
+			//mouseout：不論鼠標指針離開被選元素還是任何子元素，都會觸發
+			//mouseleave：只有在鼠標指針離開被選元素時，才會觸發
+		});
+	</script>
+</body>
+</html>
