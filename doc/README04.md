@@ -11,26 +11,35 @@
 
     02chain
 
-        < h2 >      標題
-        < div >     分隔區塊
-        < p >       段落文字
-        < span >    無分段文字
-        < img >     圖片
+        chain method 可以將動作/方法鏈接在一起。
+        $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
 
-    ele_pg.html
+    03basicSelector
 
-        實作畫面
+        選擇和操作 HTML 元素。根據名稱、id、類、類型、屬性、屬性值等“查找”（或選擇）HTML 元素。
+        $("*")      ALL
+        $("p")      p element
+        $(".classDiv")      class name = classDiv
+        $("#idsp1")     id = idsp1
 
-    form.html
+    04closestDemo
 
-        < form >    可以設定GET / POST 
-        < input >   可以選行各種輸入內容
-        tag 內有各種屬性 name id class等
+        https://www.w3schools.com/jquery/jquery_ref_traversing.asp
+        Traversing Methods
+        siblings() 同階級的
+        closest() 最近
 
-    table.html
+    05mouseevent
 
-        < table >    表格 < td > 直 < tr > 橫
-
+        blur()      失去焦點
+        click()     單點
+        dblclick()      點兩下
+        contextmenu()       右鍵
+        mousedown()       滑鼠點 下
+        mouseup()     滑鼠點 起來
+        mouseenter()      滑鼠移進去
+        mouseleave()      滑鼠移出去
+        hover()       滑鼠在上面移動
 
 + JavaScript
 
