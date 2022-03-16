@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>11AttrAndProp.html</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script>
+	//http://localhost:8080/MyFourthServlet/html/11AttrAndProp.html
+</script>
+</head>
+<body>
+	<div class="container">
+		<div align="center">
+			<h2>Attribute vs Property</h2>
+			<p>checked="true" </p><input type="checkbox" checked="true" id="checkbox1"/> 
+			<p>no checked </p><input type="checkbox" id="checkbox2" /> 
+			<p>checked="false" </p><input type="checkbox" checked="false" id="checkbox3"/>
+		</div>
+	</div>
+	<script>
+		console.log($('#checkbox1').prop('checked')); //true
+		console.log($('#checkbox1').attr('checked')); //checked
+		console.log($('#checkbox2').prop('checked')); //false
+		console.log($('#checkbox2').attr('checked')); //undefined
+		console.log($('#checkbox3').prop('checked')); //true（註 3）
+		console.log($('#checkbox3').attr('checked')); //checked
+	</script>
+</body>
+</html>

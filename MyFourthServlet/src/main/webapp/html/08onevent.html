@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>08onevent.html</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script>
+	//http://localhost:8080/MyFourthServlet/html/08onevent.html
+</script>
+</head>
+<body>
+	<div class="container">
+		<input class="btn btn-primary" type="button" value="事先綁定"
+			id="buttonBefore"> 
+		<input class="btn btn-primary"
+			type="button" value="綁定多個事件" id="buttonMultiple">
+	</div>
+
+	<script>
+		$(function() {
+			//事先綁定事件
+			$("#buttonBefore").on("click", function() {
+				console.log($(this).val());
+			});
+
+			//單一元素綁定不同事件
+			$("#buttonMultiple").on({
+				click : function() {
+					console.log("click");
+				},
+				dblclick : function() {
+					console.log("Double Click");
+				},
+				mouseenter : function() {
+					console.log("Mouse Enter");
+				}
+			});
+		})
+	</script>
+</body>
+</html>

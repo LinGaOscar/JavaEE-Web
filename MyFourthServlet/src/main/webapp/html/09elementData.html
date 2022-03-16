@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>09elementData.html</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script>
+	//http://localhost:8080/MyFourthServlet/html/09elementData.html
+</script>
+</head>
+<body>
+	<div class="text-center" id="nameCard" data-name="Jason"
+		data-last-name="Kidd" data-age="42">Jason Kidd</div>
+
+	<script>
+		console.log($("#nameCard").data('name'))
+		console.log($("#nameCard").data('lastName'))
+		console.log($("#nameCard").data('last-name'))
+		console.log($("#nameCard").data('age'))
+	</script>
+
+</body>
+</html>

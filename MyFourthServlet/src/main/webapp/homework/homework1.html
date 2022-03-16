@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>homework1.html</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="../html/static/js/jquery-3.6.0.min.js"></script>
+<script>
+	//http://localhost:8080/MyFourthServlet/homework/homework1.html
+</script>
+</head>
+<body>
+	<div>
+		<h2>請滑動星星給分</h2>
+		<img id="img1" src="img/star.gif" width="96px" /> 
+		<img id="img2" src="img/star.gif" width="96px" /> 
+		<img id="img3" src="img/star.gif" width="96px" /> 
+		<img id="img4" src="img/star.gif" width="96px" /> 
+	    <img id="img5" src="img/star.gif" width="96px" />
+		<p id="p1">來打分數八!</p>
+		<p id="p2">請給分吧!</p>
+		<h2>滑鼠點擊後不會在改動畫面</h2>
+		<h2>再次點擊後滑動星星給分</h2>
+	</div>
+
+	<script>
+		$("img").mouseenter(function() {
+			$(this).prop("src", "img/chngstar.gif");
+			$("#p1").text("你現在在" + $(this).attr('id'));
+		});
+		$("img").mouseleave(function() {
+			$(this).prop("src", "img/star.gif");
+		});
+		$("img").click(function() {
+			let stars = $(this).attr('id').slice(3);
+			$("#p2").text("你選的是" + stars);
+			for (i = 1; i < stars; i++) {
+				$("#img" + i).prop("src", "img/chngstar.gif");
+			}
+		});
+	</script>
+
+	<script>
+		/*
+			let starsClicked = false;
+			$("img").mouseenter(function() {
+				if (starsClicked == false) {
+					$(this).prop("src", "img/chngstar.gif");
+					$("#p1").text("你現在在" + $(this).attr('id'));
+				}
+			});
+			$("img").mouseleave(function() {
+				if (starsClicked == false) {
+					$(this).prop("src", "img/star.gif");
+				}
+			});
+			$("img").click(function() {
+				let stars = $(this).attr('id').slice(3);
+				$("#p2").text("你選的是" + stars);
+				starsClicked = !starsClicked;
+				if (starsClicked == true) {
+					for (i = 1; i < stars; i++) {
+						$("#img" + i).prop("src", "img/chngstar.gif");
+					}
+				} else {
+					$("img").prop("src", "img/star.gif");
+				}
+			});
+		 */
+	</script>
+</body>
+</html>

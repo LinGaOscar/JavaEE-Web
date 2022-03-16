@@ -9,16 +9,14 @@
 <script src="static/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-	<h1 id="1">write less, do more1</h1>
-	<h1 id="2">write less, do more2</h1>
-	<h1 id="3">write less, do more3</h1>
-	<h1 class="4">write less, do more4</h1>
-	<h1>write less, do more5</h1>
+	<h2 id="1">write less, do more1</h2>
+	<h2 id="2">write less, do more2</h2>
+	<h2 id="3">write less, do more3</h2>
 
 	<script>
-		console.log($("h1")); //5
+		//console.log($("h2")); //5 ele in arr
 
-		$("h1").css("color", "green").mouseover(over).mouseout(out);
+		$("h2").css("color", "green").mouseover(over).mouseout(out);
 		function over() {
 			$(this).css("color", "blue");
 		}

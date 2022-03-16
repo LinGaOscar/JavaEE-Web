@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>10elementContent.html</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script>
+	//http://localhost:8080/MyFourthServlet/html/10elementContent.html
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="text-center">
+			<p id="p1">THIS IS P TAG</p>
+			<input type="button" id="bt1" value="Alert!"> 
+			<input type="button" id="bt1-1" value="Change!">
+		</div>
+		<div class="text-center">
+			<p>THIS IS INPUT TAG</p>
+			<input type="text" value="hello" id="text1"> 
+			<input type="button" value="Alert!" id="bt2"> 
+			<input type="button"  value="Change!" id="bt2-1">
+		</div>
+	</div>
+	<script>
+		$("#bt1").click(function() {
+			alert($("#p1").text());
+		});
+		
+		$("#bt1-1").click(function() {
+			$("#p1").text("I GOT IT");
+		});
+		
+		$("#bt2").click(function() {
+			alert($("#text1").val());
+		});
+		
+		$("#bt2-1").click(function() {
+			$("#text1").val("We love JQuery");
+		});
+		
+	</script>
+</body>
+</html>

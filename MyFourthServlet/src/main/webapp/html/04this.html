@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>04this.html</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script>
+	//http://localhost:8080/MyFourthServlet/html/04this.html
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+	<hr>
+	<input type="button" id="btn1" value="click">
+
+	<script>
+		$(function() {
+			$("#btn1").click(function() {
+				console.log(this); //JS object
+				console.log($(this)); //selector
+
+			});
+
+		});
+	</script>
+</body>
+</html>

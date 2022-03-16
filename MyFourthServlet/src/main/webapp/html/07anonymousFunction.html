@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<title>07anonymousFunction.html</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="static/js/jquery-3.6.0.min.js"></script>
+<script>
+	//http://localhost:8080/MyFourthServlet/html/07anonymousFunction.html
+</script>
+<style>
+p {
+	background: yellow;
+}
+</style>
+</head>
+<body>
+	<p>
+		Hello, <span>Person</span> <em>and person</em>.
+	</p>
+	<p id="idp">ppppppppppp</p>
+	<script>
+		//basic function
+		$("p").hover(enter, leave);
+
+		function enter() {
+			$(this).css("color", "red")
+		}
+
+		function leave() {
+			$(this).css("color", "green")
+		}
+
+		//anonymous function
+		$("#idp").hover(function() {
+			$(this).css("color", "blue")
+		}, function() {
+			$(this).css("color", "deeppink")
+		});
+	</script>
+</body>
+</html>

@@ -2,31 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>01documentReady.html</title>
+<title>03documentReady.html</title>
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 <script src="static/js/jquery-3.6.0.min.js"></script>
 <script>
-	//http://localhost:8080/MyFourthServlet/html/01documentReady.html
+	//http://localhost:8080/MyFourthServlet/html/03documentReady.html
 </script>
 <script>
 	//document ready is event, process after DOMETree create
-	// jQuery(document).ready(function(){
-	//      $("h1").css("color","blue");
-	// });
 
 	//JS way
-	$(function() {
-		$("h1").css("color", "pink");
-	})
+	document.onreadystatechange = function () {
+		let h1 = document.querySelector("h1");
+		h1.style.color = 'green';
+	}
+
+	//jQuery(document).ready(function() {
+	//	$("h1").css("color", "blue");
+	//});
+
+	//$(function() {
+	//	$("h1").css("color", "blue");
+	//})
 </script>
 </head>
 <body>
 	<h1>write less,do more</h1>
 	<h2>write less,do more</h2>
-	<!--  
+ 
 	<script>
+	//DOM is finish
 		$("h1").css("color", "red");
 	</script>
-	-->
+
 </body>
 </html>
