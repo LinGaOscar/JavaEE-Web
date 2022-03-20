@@ -45,3 +45,31 @@
         Traversing Methods
         siblings() 同階級的
         closest() 最近
+
+    07anonymousFunction
+
+        函式表達式，也稱為匿名函式。不用取名的函式
+        創建好function後把function名稱拿掉就是匿名函式
+
+    08onevent
+
+        給API 帶來了很大的一致性，因為它簡化了 jQuery 代碼庫。
+
+    09elementData
+
+        更新數據不會影響 DOM 中的屬性
+
+    10elementContent
+
+        .html()用為讀取和修改元素的HTML標籤
+        .text()用來讀取或修改元素的純文字內容
+        .val()用來讀取或修改表單元素的value值
+
+    11AttrAndProp
+
+        attr() 返回屬性的 默認值 （原始狀態），而 prop() 返回 當前值 （當前狀態）
+        Attribute 是 HTML 的特性，其值只能是字串
+        Property 是 DOM（Document Object Model，文件物件模型）的屬性
+
+
+
