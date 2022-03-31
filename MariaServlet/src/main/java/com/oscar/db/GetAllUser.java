@@ -46,7 +46,8 @@ public class GetAllUser extends HttpServlet {
 			}
 			
 			response.getWriter().append("Served at: ").append(request.getContextPath());
-			
+			connection.close();
+			stmt.close();
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e);
