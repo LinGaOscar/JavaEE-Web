@@ -21,7 +21,6 @@ public class GetAllUser extends HttpServlet {
 
 	private static final String SQLUPD = "UPDATE employee SET salary = ? WHERE empno = ?";
 	private static final String SQLSEL = "SELECT * FROM sys_user";
-
 //	http://localhost:8080/MariaServlet/GetAllUser
 	public GetAllUser() {
 		super();
