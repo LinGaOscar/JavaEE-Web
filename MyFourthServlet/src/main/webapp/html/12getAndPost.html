@@ -11,6 +11,44 @@
 </script>
 </head>
 <body>
+	<form action="https://httpbin.org/anything" method="get">
+		<label for="fname">First name:</label> 
+		<input type="text" id="fname" name="fname">
+		<br> 
+		<br> 
+		<label for="lname">Last name:</label> 
+		<input type="text" id="lname" name="lname"><br> <br>
+		<input type="submit" value="Submit">
+	</form>
+	
+	
+	<form action="https://httpbin.org/anything" method="post">
+		<label for="fname">First name:</label>  
+		<input type="text" id="fname" name="fname">
+		<br> 
+		<br> 
+		<label for="lname">Last name:</label> 
+		<input type="text" id="lname" name="lname">
+		<br> 
+		<br>
+		<input type="submit" value="Submit">
+	</form>
 
+
+
+
+
+	<script type="text/javascript">
+		let data = {
+			name : "Oscar",
+			lastName : "Lin"
+		}
+		$.get("https://httpbin.org/anything", data, function(result) {
+			console.log(result);
+		});
+		$.post("https://httpbin.org/anything", data, function(result) {
+			console.log(result);
+		});
+	</script>
 </body>
 </html>
